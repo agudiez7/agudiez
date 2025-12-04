@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Legal y Privacidad - Alex Agudiez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =========================================
+           ESTILOS ESPECÍFICOS PARA LEGAL.HTML
+           (Heredando la estética de agudiez.com)
+           ========================================= */
+        
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --accent-color: #0616ff; /* Tu azul de acento */
+            --font-main: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* --- CONTENEDOR PRINCIPAL --- */
+        .legal-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 24px 120px 24px;
+        }
+
+        /* --- TIPOGRAFÍA --- */
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 60px;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: #333; /* Un negro suave para lectura */
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- BOTÓN VOLVER (Estilo .social-btn heredado) --- */
+        .back-btn-container {
+            margin-top: 80px;
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .btn-return {
+            display: inline-block;
+            text-decoration: none;
+            color: #000000;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 1px solid #000000;
+            border-radius: 50px;
+            padding: 12px 35px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-return:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* --- BANNER DE COOKIES --- */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000; /* Fondo negro para contraste */
+            color: #ffffff;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+            transform: translateY(100%);
+            transition: transform 0.5s ease-in-out;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+            gap: 20px;
+        }
+
+        #cookie-banner.visible {
+            transform: translateY(0);
+        }
+
+        .cookie-text {
+            font-size: 0.9rem;
+            font-weight: 400;
+            max-width: 800px;
+        }
+
+        .cookie-btn {
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: transform 0.2s ease, background-color 0.3s;
+        }
+
+        .cookie-btn:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Cookies */
+        @media (max-width: 768px) {
+            #cookie-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 20px;
+            }
+            
+            .cookie-btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="legal-wrapper">
+        <h1>Legal & Privacidad</h1>
+
+        <section id="aviso-legal">
+            <h2>Aviso Legal</h2>
+            
+            <h3>Titularidad del sitio web</h3>
+            <p>El sitio web <strong>www.agudiez.com</strong> es propiedad de:</p>
+            <ul>
+                <li><strong>Nombre:</strong> Alex Agudiez</li>
+                <li><strong>Dirección:</strong> Madrid, España</li>
+                <li><strong>Correo electrónico:</strong> alex7hp@gmail.com</li>
+            </ul>
+
+            <h3>Objeto del sitio web</h3>
+            <p>El sitio web tiene como finalidad mostrar proyectos personales y ofrecer servicios profesionales de diseño, ilustración y UX/UI.</p>
+
+            <h3>Propiedad intelectual e industrial</h3>
+            <p>Todos los contenidos del sitio web, incluyendo textos, imágenes, gráficos, diseños, logotipos, iconos y software, son propiedad de Alex Agudiez, salvo que se indique lo contrario. Queda prohibida la reproducción, distribución, comunicación pública o transformación de los mismos sin autorización expresa.</p>
+
+            <h3>Responsabilidad</h3>
+            <p>Alex Agudiez no se hace responsable de los errores u omisiones en los contenidos, ni de los daños derivados del uso del sitio web o de enlaces externos.</p>
+        </section>
+
+        <section id="privacidad">
+            <h2>Política de Privacidad</h2>
+            
+            <h3>Responsable del tratamiento</h3>
+            <p>Alex Agudiez, con datos de contacto arriba indicados.</p>
+
+            <h3>Datos que recogemos</h3>
+            <ul>
+                <li>Nombre y correo electrónico cuando un usuario contacta o solicita información.</li>
+                <li>Información proporcionada voluntariamente mediante formularios de contacto.</li>
+            </ul>
+
+            <h3>Finalidad del tratamiento</h3>
+            <ul>
+                <li>Responder consultas y solicitudes de información sobre servicios.</li>
+                <li>Enviar información sobre proyectos o novedades si el usuario lo solicita.</li>
+            </ul>
+
+            <h3>Legitimación</h3>
+            <p>El tratamiento de los datos se basa en el consentimiento del usuario al enviar sus datos mediante los formularios de contacto.</p>
+
+            <h3>Conservación de datos</h3>
+            <p>Los datos se conservarán mientras sean necesarios para ofrecer los servicios y responder consultas, y mientras el usuario no solicite su supresión.</p>
+
+            <h3>Derechos de los usuarios</h3>
+            <p>Puedes ejercer los derechos de acceso, rectificación, supresión, limitación, oposición y portabilidad escribiendo a <a href="mailto:alex7hp@gmail.com">alex7hp@gmail.com</a>.</p>
+
+            <h3>Seguridad de los datos</h3>
+            <p>Se aplican medidas técnicas y organizativas para proteger los datos frente a accesos no autorizados, pérdida o divulgación.</p>
+        </section>
+
+        <section id="cookies">
+            <h2>Cookies</h2>
+            <p>Si el sitio web utiliza cookies, se mostrará un aviso visible y se ofrecerá la opción de aceptarlas o rechazarlas, conforme a la normativa vigente.</p>
+        </section>
+
+        <div class="back-btn-container">
+            <a href="agudiez.html" class="btn-return">← Volver a Inicio</a>
+        </div>
+    </main>
+
+    <div id="cookie-banner">
+        <div class="cookie-text">
+            Este sitio web utiliza cookies propias y de terceros para mejorar tu experiencia de navegación. 
+            Al continuar navegando, aceptas nuestra política de cookies.
+        </div>
+        <button id="accept-cookies" class="cookie-btn">Aceptar Cookies</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const banner = document.getElementById('cookie-banner');
+            const acceptBtn = document.getElementById('accept-cookies');
+            
+            // Comprobamos si ya aceptó las cookies previamente
+            if (!localStorage.getItem('cookiesAccepted')) {
+                // Pequeño retraso para una entrada suave
+                setTimeout(() => {
+                    banner.classList.add('visible');
+                }, 500);
+            }
+
+            // Al hacer clic en aceptar
+            acceptBtn.addEventListener('click', function() {
+                // Guardamos la decisión en el navegador
+                localStorage.setItem('cookiesAccepted', 'true');
+                // Ocultamos el banner
+                banner.classList.remove('visible');
+            });
+        });
+    </script>
+</body>
+</html>

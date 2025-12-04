@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agudiez | Sobre Mí</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="agudiez.css">
+  <link rel="stylesheet" href="sobrealex.css">
+</head>
+
+<body>
+  <div id="loader">
+    <video 
+        id="loader-video"
+        src="portfolio/logoloader.mp4" 
+        autoplay 
+        muted 
+        playsinline 
+        preload="auto" 
+        aria-hidden="true" 
+    ></video>
+  </div>
+
+ <header class="header">
+    <button class="menu-toggle" aria-controls="mobileMenu" aria-expanded="false">
+<span class="hamburger-line top"></span>
+<span class="hamburger-line middle"></span>
+<span class="hamburger-line bottom"></span>
+</button>
+    
+    <div class="logo">
+      <a href="agudiez.html">
+        <img src="portfolio/PORFOLIO PNG WHITE.png" alt="Logo Agudiez">
+      </a>
+      
+      <div class="social-header">
+        <a href="https://www.linkedin.com/in/alex-agudiez/" target="_blank">
+          <img src="portfolio/linkedinb.png" class="icon" data-hover="portfolio/linkedin-white.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/agudiez_/" target="_blank">
+          <img src="portfolio/instagramb.png" class="icon" data-hover="portfolio/instagram-white.png" alt="Instagram">
+        </a>
+        <a href="mailto:alex7hp@gmail.com">
+          <img src="portfolio/gmailb.png" class="icon" data-hover="portfolio/gmail-white.png" alt="Gmail">
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="agudiez.html" class="nav-btn">Inicio</a></li>
+        <li><a href="portfolioagudiez.html" class="nav-btn">Portfolio</a></li>
+        <li><a href="sobrealex.html" class="nav-btn active-page">Sobre mí</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="agudiez.html">Inicio</a></li>
+        <li><a href="portfolioagudiez.html">Portfolio</a></li>
+        <li><a href="sobrealex.html">Sobre mí</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="about-container">
+
+    <section class="about-hero">
+      <div class="about-image-wrapper reveal-up">
+        <img src="portfolio/agua.jpg" alt="Alex Agudiez Portrait" class="profile-pic">
+      </div>
+      
+      <div class="about-bio reveal-up" data-delay="0.2">
+        <h1 class="bio-title">Soy Alex Agudiez.</h1>
+        <h2 class="bio-subtitle">Convierto ideas en experiencias digitales que sorprenden.</h2>
+        <div class="separator-line"></div>
+        <p class="bio-text">
+          Estudiante de <strong>Productos Transmedia</strong>, donde mezclo Marketing, UX/UI y Diseño para crear proyectos con personalidad propia. Apasionado del detalle y del impacto visual, siempre busco que lo que diseño no solo se vea bien, sino que se sienta. Curioso, creativo y con algo de obsesión por superarme (y por el gimnasio, sí, eso también cuenta.)
+        </p>
+        <p class="bio-text">
+          Cuando no estoy trasteando con la IA o pensando en mi próximo proyecto, probablemente me encuentres siguiendo el fútbol al minuto. <br><br>
+          <span class="highlight-text">Para mí, brillar no es un objetivo: es la consecuencia de hacer lo que me mueve.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="info-grid">
+      
+      <div class="grid-item experience-card reveal-up">
+        <h3 class="card-label">Experiencia</h3>
+        
+        <div class="job-item">
+          <div class="job-header">
+            <h4>Asistente en Tienda Física</h4>
+            <span class="date">2 años</span>
+          </div>
+          <p class="company">Inmobiliaria</p>
+          <p class="details">Venta directa y fidelización.</p>
+        </div>
+
+        <div class="job-item">
+          <div class="job-header">
+            <h4>Atención al Cliente</h4>
+            <span class="date">5 meses</span>
+          </div>
+          <p class="company">Tienda C&A</p>
+          <p class="details">Especialista en ventas minoristas.</p>
+        </div>
+
+        <div class="job-item highlight-job">
+          <div class="job-header">
+            <h4>Certificado Flujos IA</h4>
+            <span class="date">Finalizado</span>
+          </div>
+          <p class="company">BIG School</p>
+          <p class="details">Inteligencia Artificial aplicada a flujos creativos.</p>
+        </div>
+      </div>
+
+      <div class="grid-item education-card reveal-up" data-delay="0.1">
+        <h3 class="card-label">Educación</h3>
+        <div class="edu-item">
+          <h4>Gestión y Desarrollo de Productos Transmedia</h4>
+          <p>La Salle Universidad, Madrid</p>
+          <span class="status">En progreso</span>
+        </div>
+        <div class="edu-item">
+          <h4>Bachillerato Ciencias y Ebau</h4>
+          <p>IES Hoces del Duratón</p>
+          <span class="status">2023</span>
+        </div>
+      </div>
+
+      <div class="grid-item awards-card reveal-up" data-delay="0.2">
+        <h3 class="card-label">Reconocimientos</h3>
+        <ul class="awards-list">
+          <li>🏆 Ganador campaña publicitaria <strong>Mahou x LaLiga</strong>.</li>
+          <li>🌍 Ganador concursos internacionales de ilustración <strong>Real Madrid CF</strong>.</li>
+          <li>📚 Premiado en concursos de literatura juvenil.</li>
+          <li>🎨 Título Experto en Paquete Adobe.</li>
+          <li>🤖 Curso Experto en Inteligencia Artificial Big School.</li>
+
+        </ul>
+
+        
+      </div>
+
+    </section>
+
+    <!-- Imagen original para desktop -->
+<div class="awards-image-desktop">
+    <img src="portfolio/banderas.jpg" alt="Banderas" style="width:100%; margin-top:20px; border-radius:14px;">
+</div>
+
+<!-- Imágenes recortadas para móvil -->
+<div class="awards-image-mobile">
+    <img src="portfolio/banderas-top.png" alt="Banderas Top" style="width:100%; border-radius:14px; margin-bottom:10px;">
+    <img src="portfolio/banderas-bottom.png" alt="Banderas Bottom" style="width:100%; border-radius:14px; margin-top:10px;">
+</div>
+
+
+    <section class="skills-section reveal-up">
+        <h3 class="section-title-small">Skills & Aptitudes</h3>
+        
+        <div class="skills-wrapper">
+            <div class="skills-track">
+                <span>Figma</span><span>Adobe XD</span><span>HTML/CSS</span><span>InVision</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>After Effects</span><span>Premiere Pro</span><span>Lightroom</span><span>IA Generativa</span><span>Branding</span>
+                <span>Figma</span><span>Adobe XD</span><span>HTML/CSS</span><span>InVision</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>After Effects</span><span>Premiere Pro</span><span>Lightroom</span><span>IA Generativa</span><span>Branding</span>
+            </div>
+        </div>
+
+        <div class="soft-skills-grid">
+            <div class="soft-tag">Creatividad</div>
+            <div class="soft-tag">Visión Estratégica</div>
+            <div class="soft-tag">Comunicación Efectiva</div>
+            <div class="soft-tag">Trabajo en Equipo</div>
+            <div class="soft-tag">Resolución de Problemas</div>
+            <div class="soft-tag filled">Adaptabilidad Rápida</div>
+            <div class="soft-tag">Idiomas: ES | EN (B1) | FR (A2)</div>
+        </div>
+    </section>
+
+  </main>
+
+  <div class="footer-block">
+        <div class="call-to-action-quote">
+            Todo empieza con una idea. <br> 
+            Lo importante es saber hasta dónde puede llegar.
+        </div>
+        <br><br> <br><br><br> 
+
+
+     <footer class="main-footer">
+    <div class="footer-content">
+
+        <h2 class="footer-cta-title" data-scroll-reveal>
+            ¿Hablamos?
+        </h2>
+
+        <div class="footer-grid">
+
+            <div class="footer-column contact-info" data-scroll-reveal data-scroll-delay="0.1s">
+                <p class="section-label">Contacto</p>
+                <a href="mailto:tuemail@dominio.com" class="contact-link">alex7hp@gmail.com</a>
+                <a href="https://www.linkedin.com/in/alex-agudiez/" class="contact-number">Escríbeme en Redes!</a>
+                <footer class="footer">
+  <div class="social-footer">
+  <a href="https://www.linkedin.com/in/alex-agudiez/" target="_blank">
+    <img src="portfolio/linkedinb.png" class="footer-icon" alt="LinkedIn">
+  </a>
+  <a href="https://www.instagram.com/agudiez_/" target="_blank">
+    <img src="portfolio/instagramb.png" class="footer-icon" alt="Instagram">
+  </a>
+  <a href="mailto:alex7hp@gmail.com">
+    <img src="portfolio/gmailb.png" class="footer-icon" alt="Gmail">
+  </a>
+</div>
+
+            </div>
+            
+            <div class="footer-column nav-links" data-scroll-reveal data-scroll-delay="0.2s">
+                <p class="section-label">Navegación</p>
+                <a href="agudiez.html" class="footer-nav-link">Inicio</a>
+                <a href="portfolioagudiez.html" class="footer-nav-link">Portfolio</a>
+                <a href="sobrealex.html" class="footer-nav-link">Sobre mí</a>
+            </div>
+
+            <div class="footer-column extra-info" data-scroll-reveal data-scroll-delay="0.3s">
+                <p class="section-label">Legal</p>
+                <a href="#" class="footer-nav-link">Política de Cookies</a>
+                <a href="#" class="footer-nav-link">Términos de Servicio</a>
+            </div>
+        </div>
+
+         <!-- SECCIÓN ACTUALIZADA AQUÍ -->
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 Alex Agudiez. Todos los derechos reservados.</p>
+            <div class="legal-links">
+               <a href="legal.html#privacidad">Política de Privacidad</a>
+               <a href="legal.html#aviso-legal">Aviso Legal</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="agudiez.js"></script>
+</body>
+</html>

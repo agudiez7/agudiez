@@ -1,0 +1,2736 @@
+/* =========================
+   TÍTULO EN VERDE: ESTILOS GENERALES
+   ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #000; /* fondo negro general */
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* =========================
+   TÍTULO EN VERDE: HEADER PRINCIPAL
+   ========================= */
+
+.header {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 60px;
+  top: 30px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 10px 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* =========================
+   TÍTULO EN VERDE: HERO PRINCIPAL (DOS COLUMNAS)
+   ========================= */
+
+.hero {
+  position: relative; /* contenedor para video absoluto */
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start; /* ahora solo importa hero-left */
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 100px; /* mueve todo el bloque hacia la derecha */
+  padding-right: 20px;
+padding-top: 60px; /* <--- esto baja todo el bloque (imagen + texto) */
+}
+
+
+
+.hero-left img {
+  width: 180%;        /* tamaño grande */
+  max-width: 700px;  
+  height: auto;
+  margin-bottom: 20px; 
+  margin-left: 5px;  /* solo un poquito hacia la derecha */
+  margin-right: 0;
+}
+
+
+.hero-left p {
+  font-size: 1.2rem; /* un poquito más grande */
+  line-height: 1.5rem;
+  color: #ffffff;
+  margin-top: -5px;
+  font-weight: 200;
+  
+}
+
+.motivational-text {
+    font-size: 1.2rem; /* un poquito más grande */
+  line-height: 1.5rem;
+  color: #ffffff;
+  margin-top: -15px;
+  font-weight: 200;
+  margin-left: 20px; /* mueve el texto hacia la derecha */
+}
+
+
+
+/* ========================= */
+/* Video fijo a la derecha */
+/* ========================= */
+.hero-right video {
+  position: absolute;  /* ❌ fuera del flujo flex */
+  right: 110px;         /* fija distancia del borde derecho */
+  top: 50%;            /* centrado verticalmente */
+  transform: translateY(-50%); /* realmente centra verticalmente */
+  width: 515px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* =========================
+   TÍTULO EN VERDE: LOADER INICIAL
+   ========================= */
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+#loader video {
+  width: 220px; /* tamaño del logo animado */
+  height: auto;
+  border-radius: 10px;
+}
+
+#loader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* =========================
+   TÍTULO EN VERDE: SECCIÓN BLANCA
+   ========================= */
+/* =========================
+   TÍTULO EN VERDE: SECCIÓN BLANCA
+   ========================= */
+/* =========================
+   TÍTULO EN VERDE: SECCIÓN BLANCA
+   ========================= */
+/* =========================
+   TÍTULO EN VERDE: SECCIÓN BLANCA
+   ========================= */
+/* =========================
+   SECCIÓN BLANCA
+   ========================= */
+.white-section {
+  width: 100%;
+  height: 130vh;
+  background-color: #fff;
+  position: relative; /* necesario para usar top */
+  top: -350px;        /* mueve toda la sección 150px hacia arriba */
+  padding: 10px 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+
+.white-text-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 90px; /* sube o baja los textos dentro de la sección */
+}
+
+
+.white-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.3;
+  color: #000;
+  margin-bottom: 140px;  /* separación entre los textos */
+}
+
+/* =========================
+   SECCIÓN NEGRA
+   ========================= */
+.black-section {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 80px 100px;
+  box-sizing: border-box;
+}
+
+.black-section-title h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.black-section-title p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 900px;
+  margin-bottom: 60px;
+}
+
+/* =========================
+   SECCIÓN ¿QUÉ PUEDO HACER?
+   ========================= */
+.do-section {
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  margin-top: -130px; /* sube la sección 100px sobre la posición original */
+}
+
+/* 🚀 CENTRADO CLAVE: Alinea el texto de todos sus hijos (h1 y p) al centro */
+.do-section-title {
+    text-align: center; 
+}
+
+
+.do-section-title h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 68px;
+  margin-bottom: 45px;
+  margin-top: -50px; /* sube todo 50px */
+  
+}
+
+.do-section-title p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 90px;
+  max-width: 900px;
+  
+  /* 🚀 CENTRADO CLAVE: Para centrar un elemento con 'max-width' */
+  margin-left: auto;
+  margin-right: auto;
+  /* o la forma abreviada: margin: 0 auto 90px auto; */
+}
+
+/* =========================
+   BOTÓN VER PORTFOLIO
+   ========================= */
+.portfolio-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.portfolio-button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  border: 1.58px solid #fff;
+  border-radius: 50px;
+  padding: 18px 50px;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.portfolio-button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   RESET GENERAL
+   ========================= */
+
+
+/* =========================
+   SECCIÓN BLANCA 2 (FRASES)
+   ========================= */
+
+
+.white-section-two {
+  width: 150%;          /* siempre al 100% del viewport */
+  height: 180vh;
+  background-color: #fff;
+  position: relative;
+  top: -350px;
+  left: 0;              /* punto de referencia */
+  transform: translateX(-400px); /* mueve 50px a la izquierda */
+  padding: 10px 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+
+.white-text-container-two {
+  max-width: 1200px;       /* limita el ancho para que no se estire */
+  width: 100%;
+  margin: 0 auto;          /* centrado horizontal */
+  display: flex;
+  flex-direction: column;
+  gap: 80px;               /* separación entre frases */
+ padding: 0 20px 0 70px; /* top 0, derecha 20px, bottom 0, izquierda 50px */
+
+  padding-top: 110px; /* 🔹 sube o baja los textos cambiando este valor */    /* un poquito de padding lateral para que no pegue */
+  
+}
+
+.white-quote {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.3;
+  color: #000;
+  margin: 0;
+}
+
+/* =========================
+   NUEVAS SERVICE CARDS (3D FLIP)
+   ========================= */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.service-card-flip {
+  perspective: 1200px;
+  width: 100%;
+  height: 545px;
+  border-radius: 40px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-style: preserve-3d;
+  border-radius: 40px;
+}
+
+.service-card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* FRONT */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card-front {
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-front h3 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* BACK */
+.card-back {
+  transform: rotateY(180deg);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.card-back p {
+  color: #f0f0f0;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .service-card-flip {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .service-card-flip {
+    height: 300px;
+  }
+}
+
+/*
+/*
+=========================================
+ESTILOS GLOBALES Y DE TIPOGRAFÍA (Ajusta según tu archivo base)
+=========================================
+*/
+body {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Inter', sans-serif; /* Tipografía Inter */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita scroll horizontal por los carruseles */
+}
+
+/*
+=========================================
+ESTILOS DE SECCIÓN DE CARRUSEL
+=========================================
+*/
+.carousel-section {
+    /* AJUSTE CLAVE PARA SUBIR LA SECCIÓN COMPLETA:
+    Reducimos el padding superior para acercar la sección al contenido de arriba.
+    Ajusta '20px' a un valor menor (ej: 0px) si quieres subirlo más.
+    */
+    margin-top: -250px;
+    padding-top: -200px; 
+    padding-bottom: 40px; /* Mantén o ajusta separación inferior */
+    text-align: center;
+}
+
+.carousel-section h2 {
+    /* AJUSTE CLAVE PARA EL TÍTULO:
+    Limitamos el ancho a 700px y lo centramos, como se solicitó.
+    Esto hará que el texto no ocupe todo el ancho de la pantalla en escritorio.
+    */
+    max-width: 700px;
+    margin: 0 auto 30px auto; /* Centra el título y añade margen inferior de 30px */
+    
+    font-size: 68px; /* Tamaño de título */
+    font-weight: 900;
+}
+
+/*
+=========================================
+CONTENEDOR DEL CARRUSEL
+=========================================
+*/
+.carousel-container {
+    /* El ancho visible del carrusel */
+    width: 100%; 
+    /* El viewport que oculta los ítems que están fuera de vista */
+    overflow: hidden; 
+    /* Bordes redondeados para el contenedor principal */
+    border-radius: 20px; 
+    /* Sombra opcional para un toque profesional */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+}
+
+/*
+=========================================
+PISTA DE DESPLAZAMIENTO DEL CARRUSEL (Carousel Track)
+=========================================
+*/
+.carousel-track {
+    /* Mantiene todos los ítems en una sola línea */
+    display: flex; 
+    /* La animación de movimiento continuo se aplica aquí */
+    animation: scroll 60s linear infinite; 
+    /* Asegura un desplazamiento suave */
+    transition: transform 2.7s ease-out; 
+    /* Evita que se colapse verticalmente */
+    width: fit-content; 
+}
+
+/*
+=========================================
+ESTADO HOVER (DETENER ANIMACIÓN)
+=========================================
+*/
+.carousel-container:hover .carousel-track {
+    /* Detiene la animación al pasar el cursor sobre el contenedor */
+    animation-play-state: paused; 
+}
+
+/*
+=========================================
+ÍTEMS DEL CARRUSEL (Carousel Item)
+=========================================
+*/
+/*
+=========================================
+ÍTEMS DEL CARRUSEL (Carousel Item)
+=========================================
+*/
+.carousel-item {
+    /* Tamaño fijo para los ítems en escritorio (ajustable) */
+    min-width: 300px; 
+    height: 350px;
+    /* ... el resto de estilos de .carousel-item ... */
+    margin: 0 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none; 
+}
+
+/* Modificación: Añadir ', .carousel-item video' para que el vídeo tenga el mismo formato */
+.carousel-item img, .carousel-item video {
+    /* Asegura que el medio (img/video) cubra el área del ítem */
+    width: 100%; 
+    height: 100%;
+    /* Mantiene las esquinas redondeadas en la imagen */
+    border-radius: 15px; 
+    /* **CLAVE:** Asegura que el vídeo/imagen cubra el contenedor 
+       sin distorsionar sus proporciones originales. */
+    object-fit: cover; 
+    /* Transición suave para cualquier efecto hover que quieras añadir */
+    transition: transform 0.3s ease-in-out; 
+}
+
+.carousel-item img {
+    /* Asegura que la imagen cubra el área del ítem */
+    width: 100%; 
+    height: 100%;
+    /* Mantiene las esquinas redondeadas en la imagen */
+    border-radius: 15px; 
+    /* Asegura que la imagen no se distorsione */
+    object-fit: cover; 
+    /* Transición suave para cualquier efecto hover que quieras añadir a la imagen */
+    transition: transform 0.3s ease-in-out; 
+}
+/*
+=========================================
+ANIMACIÓN DE DESPLAZAMIENTO CONTINUO
+=========================================
+*/
+/*
+PARÁMETROS CLAVE:
+- 0%: El carrusel comienza en la posición 0.
+- 100%: Se desplaza -50% del ancho total. Este 50% es crucial 
+        porque el JavaScript duplica los ítems, haciendo que el 
+        ancho total sea el doble. Al moverse un 50%, se desplaza 
+        exactamente el ancho de los ítems originales, logrando el 
+        efecto infinito.
+- La duración (e.g., 40s) controla la velocidad. Menos segundos = más rápido.
+*/
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/*
+=========================================
+RESPONSIVE DESIGN (BREAKPOINTS)
+=========================================
+*/
+
+/* Tablet (hasta 1024px) */
+@media (max-width: 1024px) {
+    .carousel-item {
+        /* Reduce el tamaño del ítem para tablets */
+        min-width: 250px; 
+        height: 300px;
+        margin: 0 10px;
+    }
+    
+    .carousel-section h2 {
+        font-size: 2rem;
+    }
+    
+    /* Parámetro a cambiar si se modifica la velocidad */
+    .carousel-track {
+        animation-duration: 30s; 
+    }
+}
+
+/* Móvil (hasta 600px) */
+@media (max-width: 600px) {
+    .carousel-item {
+        /* Reduce el tamaño del ítem para móviles */
+        min-width: 200px; 
+        height: 250px;
+        margin: 0 8px;
+    }
+    
+    .carousel-section {
+        padding: 30px 0;
+    }
+    
+    .carousel-section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Parámetro a cambiar si se modifica la velocidad */
+    .carousel-track {
+        animation-duration: 25s; 
+    }
+}
+
+/* Opcional: Para el primer carrusel */
+#carousel-illustration .carousel-item {
+    min-width: 350px;
+}
+
+/* Opcional: Para el carrusel de reviews, que pueden ser más pequeños */
+#carousel-reviews .carousel-item {
+    min-width: 250px;
+    height: 250px;
+}
+
+
+/*
+=========================================
+FRASE DE LLAMADA A LA ACCIÓN (CALL-TO-ACTION)
+=========================================
+*/
+.call-to-action-quote {
+    /* Centra el texto en la pantalla */
+    text-align: center; 
+    
+    /* Añade espacio superior para separarlo del último carrusel */
+    padding-top: 60px; 
+    /* Añade espacio inferior */
+    padding-bottom: 80px;
+    
+    /* Configuración de Tipografía */
+    font-family: 'Inter', sans-serif; 
+    
+    /* Peso de fuente de 700px (equivale a 'bold' o 'semi-bold') */
+    font-weight: 200; 
+    
+    /* Limita el ancho del texto para que no sea una línea infinita y se vea elegante.
+       El valor de 700px que mencionaste es un buen ancho máximo. */
+    max-width: 900px;
+    
+    /* Centra el bloque de texto limitado */
+    margin: 0 auto; 
+    
+    /* Ajusta el tamaño de la fuente para que destaque */
+    font-size: 1.8rem; 
+    line-height: 1.4; /* Mejora la legibilidad */
+
+}
+
+.call-to-action-quote1 {
+    /* Centra el texto en la pantalla */
+    text-align: center; 
+    
+    /* Añade espacio superior para separarlo del último carrusel */
+    padding-top: 60px; 
+    /* Añade espacio inferior */
+    padding-bottom: 80px;
+    
+    /* Configuración de Tipografía */
+    font-family: 'Inter', sans-serif; 
+    
+    /* Peso de fuente de 700px (equivale a 'bold' o 'semi-bold') */
+    font-weight: 200; 
+    
+    /* Limita el ancho del texto para que no sea una línea infinita y se vea elegante.
+       El valor de 700px que mencionaste es un buen ancho máximo. */
+    max-width: 900px;
+    
+    /* Centra el bloque de texto limitado */
+    margin: 0 auto; 
+    
+    /* Ajusta el tamaño de la fuente para que destaque */
+    font-size: 1.8rem; 
+    line-height: 1.4; /* Mejora la legibilidad */
+}
+
+
+.call-to-action-quote2 {
+    /* Centra el texto en la pantalla */
+    text-align: center; 
+    
+    /* Añade espacio superior para separarlo del último carrusel */
+    padding-top: 60px; 
+    /* Añade espacio inferior */
+    padding-bottom: 80px;
+    
+    /* Configuración de Tipografía */
+    font-family: 'Inter', sans-serif; 
+    
+    /* Peso de fuente de 700px (equivale a 'bold' o 'semi-bold') */
+    font-weight: 200; 
+    
+    /* Limita el ancho del texto para que no sea una línea infinita y se vea elegante.
+       El valor de 700px que mencionaste es un buen ancho máximo. */
+    max-width: 900px;
+    
+    /* Centra el bloque de texto limitado */
+    margin: 0 auto; 
+    
+    /* Ajusta el tamaño de la fuente para que destaque */
+    font-size: 1.8rem; 
+    line-height: 1.4; /* Mejora la legibilidad */
+}
+
+
+/* Responsive para que el texto se ajuste en móvil */
+@media (max-width: 600px) {
+    .call-to-action-quote {
+        font-size: 1.3rem;
+        padding: 40px 20px 60px 20px; /* Reduce padding y añade margen lateral en móvil */
+    }
+}
+
+/* Responsive para que el texto se ajuste en móvil */
+@media (max-width: 600px) {
+    .call-to-action-quote1 {
+        font-size: 1.3rem;
+        padding: 40px 20px 60px 20px; /* Reduce padding y añade margen lateral en móvil */
+    }
+}
+
+/* Responsive para que el texto se ajuste en móvil */
+@media (max-width: 600px) {
+    .call-to-action-quote2 {
+        font-size: 1.3rem;
+        padding: 40px 20px 60px 20px; /* Reduce padding y añade margen lateral en móvil */
+    }
+}
+
+
+/*
+=========================================
+SECCIÓN FOOTER (PIE DE PÁGINA) - ANIMADO Y MINIMALISTA
+=========================================
+*/
+.main-footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 120px 50px 40px 50px; /* Aumento de padding para un look más "aireado" */
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Título principal (CTA) - MÁS GRANDE Y AUDAZ */
+.footer-cta-title {
+    font-size: 6.5rem; /* Fuente más grande */
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 100px; /* Más espacio */
+    line-height: 1.1;
+    
+    /* ESTADO INICIAL PARA LA ANIMACIÓN DE REVELADO */
+    transform: translateY(60px); /* Desplazamiento inicial mayor */
+    opacity: 0;
+    /* Transición suave y elegante */
+    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1.2s;
+}
+
+/* Contenedor de las columnas */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px; /* Mayor separación entre columnas */
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e0e0e0; /* Línea separadora más sutil */
+}
+
+.footer-column {
+    padding: 0 10px;
+    /* ESTADO INICIAL PARA LA ANIMACIÓN DE REVELADO DE COLUMNAS */
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1s;
+}
+
+/* Etiqueta de sección */
+.section-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999; /* Color más sutil */
+    margin-bottom: 25px;
+}
+
+/* Enlaces de contacto */
+.contact-link, .contact-number {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover, .contact-number:hover {
+    color: #0616ff;
+}
+
+/* Botones de Redes Sociales (minimalista) */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-btn {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid #000000; /* Borde más fino */
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Enlaces de Navegación */
+.footer-nav-link {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 12px; /* Más espaciado */
+    transition: color 0.3s ease;
+}
+
+.footer-nav-link:hover {
+    color: #0616ff;
+}
+
+/* Sección Inferior y Legales */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 0.9rem;
+    color: #888; /* Color más discreto */
+}
+
+.legal-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 25px; /* Más separación */
+    transition: color 0.3s;
+}
+
+.legal-links a:hover {
+    color: #000000;
+}
+
+/*
+=========================================
+CLASE DE ANIMACIÓN AL SCROLL (Añadida por JS)
+=========================================
+*/
+/* Al añadir la clase is-visible, el elemento se anima a su posición final */
+[data-scroll-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* El retraso ya lo manejamos con el atributo data-scroll-delay en el HTML,
+   lo cual hace el JS más flexible. */
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========================================
+RESPONSIVE DESIGN (BREAKPOINTS)
+=========================================
+*/
+
+/* Tablet (hasta 1024px) */
+@media (max-width: 1024px) {
+    .carousel-item {
+        /* Reduce el tamaño del ítem para tablets */
+        min-width: 250px; 
+        height: 300px;
+        margin: 0 10px;
+    }
+    
+    .carousel-section h2 {
+        font-size: 2rem;
+    }
+    
+    /* Parámetro a cambiar si se modifica la velocidad */
+    .carousel-track {
+        animation-duration: 30s; 
+    }
+}
+
+/* Móvil (hasta 600px) */
+@media (max-width: 600px) {
+    .carousel-item {
+        /* Reduce el tamaño del ítem para móviles */
+        min-width: 200px; 
+        height: 250px;
+        margin: 0 8px;
+    }
+    
+    .carousel-section {
+        padding: 30px 0;
+    }
+    
+    .carousel-section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Parámetro a cambiar si se modifica la velocidad */
+    .carousel-track {
+        animation-duration: 25s; 
+    }
+}
+
+/* Opcional: Para el primer carrusel */
+#carousel-illustration .carousel-item {
+    min-width: 350px;
+}
+
+/* Opcional: Para el carrusel de reviews, que pueden ser más pequeños */
+#carousel-reviews .carousel-item {
+    min-width: 250px;
+    height: 250px;
+}
+
+
+/*
+=========================================
+FRASE DE LLAMADA A LA ACCIÓN (CALL-TO-ACTION)
+=========================================
+*/
+.call-to-action-quote {
+    /* Centra el texto en la pantalla */
+    text-align: center; 
+    
+    /* Añade espacio superior para separarlo del último carrusel */
+    padding-top: 60px; 
+    /* Añade espacio inferior */
+    padding-bottom: 80px;
+    
+    /* Configuración de Tipografía */
+    font-family: 'Inter', sans-serif; 
+    
+    /* Peso de fuente de 700px (equivale a 'bold' o 'semi-bold') */
+    font-weight: 200; 
+    
+    /* Limita el ancho del texto para que no sea una línea infinita y se vea elegante.
+       El valor de 700px que mencionaste es un buen ancho máximo. */
+    max-width: 900px;
+    
+    /* Centra el bloque de texto limitado */
+    margin: 0 auto; 
+    
+    /* Ajusta el tamaño de la fuente para que destaque */
+    font-size: 1.8rem; 
+    line-height: 1.4; /* Mejora la legibilidad */
+}
+
+/* Responsive para que el texto se ajuste en móvil */
+@media (max-width: 600px) {
+    .call-to-action-quote {
+        font-size: 1.3rem;
+        padding: 40px 20px 60px 20px; /* Reduce padding y añade margen lateral en móvil */
+    }
+}
+
+/*
+=========================================
+SECCIÓN FOOTER (PIE DE PÁGINA) - ANIMADO Y MINIMALISTA
+=========================================
+*/
+.main-footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 120px 50px 40px 50px; /* Aumento de padding para un look más "aireado" */
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Título principal (CTA) - MÁS GRANDE Y AUDAZ */
+.footer-cta-title {
+    font-size: 6.5rem; /* Fuente más grande */
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 100px; /* Más espacio */
+    line-height: 1.1;
+    
+    /* ESTADO INICIAL PARA LA ANIMACIÓN DE REVELADO */
+    transform: translateY(60px); /* Desplazamiento inicial mayor */
+    opacity: 0;
+    /* Transición suave y elegante */
+    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1.2s;
+}
+
+/* Contenedor de las columnas */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px; /* Mayor separación entre columnas */
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e0e0e0; /* Línea separadora más sutil */
+}
+
+.footer-column {
+    padding: 0 10px;
+    /* ESTADO INICIAL PARA LA ANIMACIÓN DE REVELADO DE COLUMNAS */
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1s;
+}
+
+/* Etiqueta de sección */
+.section-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999; /* Color más sutil */
+    margin-bottom: 25px;
+}
+
+/* Enlaces de contacto */
+.contact-link, .contact-number {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover, .contact-number:hover {
+    color: #0616ff;
+}
+
+/* Botones de Redes Sociales (minimalista) */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-btn {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid #000000; /* Borde más fino */
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Enlaces de Navegación */
+.footer-nav-link {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 12px; /* Más espaciado */
+    transition: color 0.3s ease;
+}
+
+.footer-nav-link:hover {
+    color: #0616ff;
+}
+
+/* Sección Inferior y Legales */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 0.9rem;
+    color: #888; /* Color más discreto */
+}
+
+.legal-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 25px; /* Más separación */
+    transition: color 0.3s;
+}
+
+.legal-links a:hover {
+    color: #000000;
+}
+
+/*
+=========================================
+CLASE DE ANIMACIÓN AL SCROLL (Añadida por JS)
+=========================================
+*/
+/* Al añadir la clase is-visible, el elemento se anima a su posición final */
+[data-scroll-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* El retraso ya lo manejamos con el atributo data-scroll-delay en el HTML,
+   lo cual hace el JS más flexible. */
+
+
+/*
+=========================================
+RESPONSIVE DESIGN (FOOTER Y CARDS)
+=========================================
+*/
+@media (max-width: 1024px) {
+    .main-footer {
+        padding: 100px 30px 30px 30px;
+    }
+    
+    .footer-cta-title {
+        font-size: 4rem;
+        margin-bottom: 80px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr; /* Apilamos las columnas */
+        gap: 0;
+    }
+
+    .footer-column {
+        padding: 30px 0;
+        text-align: left; /* Mantenemos el texto a la izquierda en móvil */
+        border-bottom: 1px solid #eee;
+    }
+
+    .footer-column:last-child {
+        border-bottom: none;
+    }
+
+    .social-icons {
+        justify-content: flex-start; /* Mantenemos el alineado a la izquierda */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-bottom: 15px;
+    }
+
+    .legal-links {
+        margin-top: 10px;
+    }
+
+    .legal-links a {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-cta-title {
+        font-size: 3rem;
+    }
+}
+
+/* Estilos Base para la sección y tipografía */
+.changing-text-section {
+    background-color: #000;
+     padding: 0 50px 50px 20px; 
+    text-align: left;
+}
+
+.changing-text-section .changing-text-phrase {
+    font-size: 2.5rem !important;
+}
+
+/* Estilos de la palabra que cambia y su animación */
+.word-animator {
+    /* La clave para evitar saltos de layout: establecemos un ancho fijo 
+       basado en la palabra más larga ("Marketer") o un ancho suficientemente grande. */
+    display: inline-block;
+    min-width: 150px; /* Ajusta este valor si tus palabras son mucho más largas */
+    text-align: left; /* Alineamos el texto a la izquierda dentro del span fijo */
+    transition: opacity 0.4s ease-in-out; /* Transición suave de 0.4s para el fade */
+    will-change: opacity; /* Optimización del navegador */
+}
+
+/* Clase para ocultar el texto (Fade Out) */
+.fade-out {
+    opacity: 0;
+}
+
+
+/* =========================================
+   MEDIA QUERIES - REGLAS RESPONSIVE (CORRECCIONES DEL HERO)
+   ========================================= */
+
+/* Tablet Horizontal y Desktop Pequeño (Max-width: 1024px) */
+@media (max-width: 1024px) {
+    /* --------------------------------------
+       1. HEADER y MENÚ
+       -------------------------------------- */
+    .nav {
+        display: none !important; 
+    }
+    .menu-toggle {
+        display: block; 
+        right: 20px; 
+        top: 25px; 
+    }
+    .logo {
+        left: 30px;
+        top: 25px;
+    }
+    .header {
+        padding: 20px 0;
+    }
+    
+    /* --------------------------------------
+       2. HERO (Reordenamiento y Apilamiento)
+       -------------------------------------- */
+    .hero {
+        flex-direction: column; /* CRUCIAL: Cambia a apilado para que order funcione */
+        height: auto; 
+        padding: 30px;
+        padding-top: 80px; 
+        gap: 40px;
+    }
+
+    .hero-left {
+        order: 1; /* Foto y texto van PRIMERO */
+        padding: 0; 
+        text-align: center; 
+    }
+    
+    .hero-right {
+        position: static; /* CRUCIAL: Anula 'position: absolute' del Desktop */
+        order: 2; /* Video va SEGUNDO, debajo del texto */
+        transform: none;
+        margin-top: 30px; /* Separación visual */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* --------------------------------------
+       3. SECCIONES (White Section más abajo)
+       -------------------------------------- */
+    .white-section {
+        margin-top: 50px; /* Empuja la White Section más abajo */
+        height: auto;
+        top: 0; 
+        transform: translateX(0); 
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    /* --- Ajustes generales de texto/elementos --- */
+    .white-section, .white-section-two {
+        top: 0;
+        transform: translateX(0);
+        padding: 50px 30px;
+        width: 100%;
+    }
+    .white-text, .white-quote {
+        font-size: 3.5rem; 
+        margin-bottom: 40px;
+    }
+    .hero-left img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .do-section {
+        margin-top: 0; 
+    }
+
+    /* Carruseles, Footer, etc. que estaban en el original de 1024px */
+    .carousel-item {
+        min-width: 250px; 
+        height: 300px;
+        margin: 0 10px;
+    }
+    .carousel-section h2 {
+        font-size: 2rem;
+    }
+    .carousel-track {
+        animation-duration: 30s; 
+    }
+    
+    /* Reglas de footer que están en el original de 1024px */
+    .main-footer {
+        padding: 100px 30px 30px 30px;
+    }
+    .footer-cta-title {
+        font-size: 3rem;
+        margin-bottom: 80px;
+        position: center;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .footer-column {
+        padding: 30px 0;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    .footer-column:last-child {
+        border-bottom: none;
+    }
+    .social-icons {
+        justify-content: flex-start;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .copyright {
+        margin-bottom: 15px;
+    }
+    .legal-links {
+        margin-top: 10px;
+    }
+    .legal-links a {
+        margin: 0 8px;
+    }
+}
+
+
+/* Móvil (Max-width: 767px) */
+@media (max-width: 767px) {
+    /* --------------------------------------
+       1.~¹. HERO (Reordenamiento)
+       -------------------------------------- */
+    .hero-left {
+        order: 1; /* Foto y texto van PRIMERO */
+        margin-top: 80px;
+    }
+
+    .hero-right {
+        position: static; /* Anula 'position: absolute' */
+        order: 2; /* Video va SEGUNDO, debajo del texto */
+        margin-top: 260px;
+    }
+    @media (max-width: 767px) {
+    .hero-right video {
+        display: block;
+        margin: 0 auto;        /* Asegura centrado */
+        max-width: 280px;      /* ← Hazlo más pequeño aquí */
+        width: 100%;
+        margin-top: 210px;
+        margin-right: -60px; /* ← súbelo o bájalo según lo quieras */
+
+}
+
+@media (max-width: 767px) {
+    .motivational-text {
+        text-align: left !important;
+        margin-left: 20px; /* opcional, para que no esté pegado al borde */
+    }
+}
+@media (max-width: 767px) {
+    .hero-left img {
+        width: 97%;   /* reduce el tamaño */
+        max-width: 650px; /* límite opcional para que no sea gigante */
+        height: auto; /* mantiene proporción */
+    }
+}
+
+    
+    /* --------------------------------------
+       2. SECCIONES (White Section más abajo)
+       -------------------------------------- */
+    .white-section {
+        margin-top: 50px; /* Empuja la White Section más abajo */
+        padding: 40px 20px;
+    }
+
+    /* --- Ajustes generales de texto/elementos --- */
+    .white-section, .white-section-two {
+        padding: 40px 20px;
+    }
+    .white-text, .white-quote {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    /* Reglas de cards que están en el original de 767px (convertido a 768px/600px en tu original) */
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .service-card-flip {
+        height: 300px;
+    }
+
+    /* Reglas de 600px/móvil más pequeño que deben aplicar */
+    .do-section {
+        padding: 40px 20px 20px 20px;
+        }
+     @media (max-width: 767px) {
+    .carousel-section {
+        padding-top: 20px;      /* menos espacio arriba */
+        padding-bottom: 20px;   /* menos espacio abajo */
+        margin-top: 10px;       /* espacio mínimo entre secciones */
+    }
+        
+
+    .carousel-section h2 {
+        margin-bottom: 50px;    /* más pegado al carrusel */
+    }
+
+    .carousel-container {
+        margin-bottom: -300px;    /* opcional, pega los carruseles entre sí */
+    }
+}
+
+    .carousel-section h2 {
+        font-size: 2.5rem;
+        padding: 0 20px; 
+    }
+    .carousel-item {
+        min-width: 200px;
+        height: 300px;
+    }
+    .call-to-action-quote {
+        font-size: 1.2rem;
+        padding: 40px 20px 60px 20px; 
+    }
+    .main-footer {
+        padding: 80px 20px 30px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .do-section-title h1 {
+        font-size: 56px;     /* Ajusta el tamaño del texto */
+        line-height: 1.2;    /* Para que no ocupe tanta altura */
+        margin-bottom: 30px; /* Ajuste opcional */
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .white-section-two {
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        width: 100vw;
+        max-width: 100vw;
+        box-sizing: border-box;
+        padding-left: 20px;  
+        padding-right: 20px;
+        margin-top: -360px;  
+        margin-bottom: 0px;
+        padding-top: 0px;    
+        padding-bottom: 0px; 
+
+        max-height: 1040px;   /* ajusta a la altura que quieras */
+        overflow: hidden;    /* corta lo que sobrepase */
+    }
+}
+
+    .white-text-container-two {
+        width: 100%;
+        padding-left: 20px;   /* un poquito de aire dentro */
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .white-section-two, .white-section-two * {
+        max-width: none !important; /* elimina límites de contenedores padres */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos Menú Hamburguesa */
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    width: 40px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+}
+.hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    transition: transform 0.4s, opacity 0.4s;
+}
+.menu-toggle.open .hamburger-line.top {
+    transform: translateY(10px) rotate(45deg);
+}
+.menu-toggle.open .hamburger-line.middle {
+    opacity: 0;
+}
+.menu-toggle.open .hamburger-line.bottom {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Overlay Full Screen */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.98);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilos de los enlaces */
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    padding: 15px 0;
+}
+
+/* Visibilidad Responsive */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block; 
+        right: 20px;
+        top: 25px;
+    }
+    .nav {
+        display: none !important; 
+    }
+}
+
+@media (max-width: 767px) {
+    .white-section {
+        /* Ajusta la altura si quieres que sea más corta */
+        /* height: auto; */
+
+        /* Ajusta márgenes para subir o bajar la sección */
+        /* margin-top: 20px; */
+        /* margin-bottom: 20px; */
+
+        /* Ajusta padding interno si quieres más o menos aire */
+        /* padding-top: 20px; */
+        /* padding-bottom: 20px; */
+        width: 100vw; /* ocupa todo el ancho */
+        box-sizing: border-box;
+         height: 620px; /* por ejemplo, ajusta a la altura que quieras */
+         padding-top: 0px; 
+    margin-top: 70px;
+     padding-top: -0px; 
+    padding-bottom
+    }
+
+    .white-text-container {
+        width: 100%;
+        padding-left: 20px;   /* aire lateral */
+        padding-right: 20px;
+        box-sizing: border-box;
+        margin-bottom: 0px; 
+        padding-top: 60px; 
+    }
+
+    .white-text {
+        font-size: 2rem;  /* tamaño de texto móvil */
+        line-height: 1.3;
+        margin-bottom: 40px; /* separación entre h2 */
+        text-align: left;    /* opcional: puedes centrar si quieres */
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-block {
+        margin-top: 290px; /* ajusta hacia abajo el bloque entero */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   TÍTULO EN VERDE: ESTILOS ESPECÍFICOS DE PORTFOLIO
+   ========================= */
+
+/* Estilo para el título de la página de Portfolio */
+.portfolio-hero {
+    /* Reutilizamos .black-section para heredar estilos de fondo y color de texto */
+    padding-top: 150px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.portfolio-main-title {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.portfolio-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #a0a0a0;
+}
+
+/* ------------------------------------- */
+/* GRID DE PROYECTOS */
+/* ------------------------------------- */
+.projects-grid-container {
+    /* Reutilizamos .do-section para padding y margen */
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en escritorio */
+    gap: 50px; /* Separación entre tarjetas */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* Tarjetas de Proyecto */
+.project-card {
+    background-color: #101010;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.project-card:hover {
+    transform: translateY(-8px); /* Efecto hover elegante */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.project-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; /* Esquinas redondeadas arriba */
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.project-description {
+    font-size: 0.95rem;
+    font-weight: 200;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    height: 2.8em; /* Fija la altura para 2 líneas de texto */
+    overflow: hidden;
+}
+
+.project-btn {
+    /* Reutiliza nav-btn para el estilo, pero hazlo más ancho */
+    width: 100%;
+    text-align: center;
+}
+
+/* ------------------------------------- */
+/* ANIMACIÓN DE ENTRADA (Fade-in Slide-up) */
+/* ------------------------------------- */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ------------------------------------- */
+/* PANEL DE DETALLE DE PROYECTO */
+/* ------------------------------------- */
+.project-detail-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.98);
+    z-index: 10000;
+    overflow-y: auto;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.95);
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+}
+
+.project-detail-panel.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.detail-content {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 50px 30px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    z-index: 10001;
+}
+
+
+.detail-content h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.detail-meta p {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+}
+
+.detail-description-full {
+    margin: 40px 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f0f0f0;
+}
+
+.detail-description-full p {
+    margin-bottom: 25px;
+}
+
+.detail-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.detail-images img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.detail-images img:hover {
+    transform: scale(1.01);
+}
+
+.close-btn-bottom {
+    display: block;
+    width: 250px;
+    margin: 60px auto 100px auto;
+    text-align: center;
+}
+
+/* =========================
+   TÍTULO EN VERDE: RESPONSIVIDAD DEL PORTFOLIO
+   ========================= */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .portfolio-main-title {
+        font-size: 3rem;
+    }
+    .portfolio-subtitle {
+        font-size: 1.1rem;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+        padding: 0 30px;
+        gap: 30px;
+    }
+    .project-card {
+        height: auto;
+    }
+    .project-image {
+        height: 200px;
+    }
+    .detail-content {
+        margin: 50px auto;
+    }
+    .close-btn {
+        top: 20px;
+        right: 30px;
+        transform: none;
+    }
+}
+
+/* Móvil (max-width: 767px) */
+@media (max-width: 767px) {
+    .portfolio-hero {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    .portfolio-main-title {
+        font-size: 2.5rem;
+    }
+    .portfolio-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+        padding: 0 20px;
+        gap: 25px;
+    }
+    .project-image {
+        height: 220px;
+    }
+    .project-title {
+        font-size: 1.3rem;
+    }
+    .project-description {
+        font-size: 0.9rem;
+    }
+    .detail-content h2 {
+        font-size: 2rem;
+    }
+    .detail-description-full, .detail-meta p {
+        font-size: 1rem;
+    }
+    .close-btn {
+        position: fixed; /* Lo fija completamente en móvil */
+        right: 15px;
+        top: 15px;
+        padding: 8px 15px;
+    }
+    .detail-content {
+        margin-top: 100px; /* Deja espacio para el botón de cerrar */
+    }
+}
+
+/* Botones del portfolio — texto en negro */
+.project-btn,
+.close-btn,
+.close-btn-bottom {
+    color: #000 !important; /* negro */
+    font-weight: 650;
+}
+
+/* Hover en azul */
+.project-btn:hover,
+.close-btn:hover,
+.close-btn-bottom:hover {
+    color: #007bff !important; /* azul elegante */
+}
+
+#detail-text-container p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+
+
+/* --- ICONOS HEADER (arriba derecha EXACTAMENTE donde tú los tenías) --- */
+.social-header {
+  position: absolute;
+  top: -3px;
+  right: -1270px;  /* tu valor exacto */
+  display: flex;
+  gap: 2px;
+  z-index: 999;
+}
+
+/* Tamaño fijo */
+.social-header .icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: filter 0.25s ease; /* sin escalar */
+}
+
+/* Solo invertir color al hacer hover */
+.social-header .icon:hover {
+  filter: invert(1);
+}
+
+
+/* --- ICONOS DEL FOOTER (blancos, pequeños, sin fondo negro raro) --- */
+.social-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-icon {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  transition: filter 0.25s ease;
+  gap: 10px;
+}
+
+/* invertir color al hover */
+.footer-icon:hover {
+  filter: invert(1);
+}
+
+/* Asegurar que fondo del footer siga siendo blanco/transparente */
+.main-footer {
+  background: #fff !important;
+}
+
+
+@media (max-width: 767px) {
+    /* Reduce espacio después del portfolio */
+    .projects-grid {
+        margin-bottom: -250px; /* antes estaba más grande */
+    }
+    
+    .call-to-action-quote {
+        padding-top: 0px;  /* acerca la frase a la última imagen */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA SOBREALEX.HTML
+   Diseño: Minimalista, Editorial, Dark UX
+   ========================================= */
+
+:root {
+    --bg-color: #000000;
+    --text-main: #ffffff;
+    --text-muted: #888888;
+    --accent: #ffffff;
+    --card-bg: #111111; /* Un gris muy oscuro para diferenciar tarjetas */
+    --font-main: 'Inter', sans-serif;
+}
+
+/* Corrección de márgenes y estructura base */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Para indicar en qué página estamos en el menú */
+.nav-btn.active-page {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+}
+
+/* Contenedor principal que evita superposiciones extrañas */
+.about-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 120px 20px 100px 20px; /* Espacio generoso arriba y abajo */
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Separación entre grandes bloques */
+}
+
+/* =========================
+   SECCIÓN 1: HERO BIO
+   ========================= */
+.about-hero {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr; /* Imagen un poco más estrecha que el texto */
+    gap: 60px;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.about-image-wrapper {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen se adapta sin deformarse */
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.about-image-wrapper:hover .profile-pic {
+    filter: grayscale(0%); /* Color al pasar el ratón */
+    transform: scale(1.03);
+}
+
+.bio-title {
+    font-size: clamp(40px, 5vw, 80px); /* Responsive fluido */
+    font-weight: 900;
+    line-height: 1,05;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #fff, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bio-subtitle {
+    font-size: clamp(20px, 2vw, 32px);
+    font-weight: 200;
+    color: #ddd;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.separator-line {
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.bio-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #bbb;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+
+/* =========================
+   SECCIÓN 2: BENTO GRID (EXPERIENCIA)
+   ========================= */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: var(--card-bg);
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid #222;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    border-color: #444;
+}
+
+/* Asignación de espacios en el grid */
+.experience-card {
+    grid-column: span 7; /* Ocupa 7 columnas */
+}
+
+.education-card {
+    grid-column: span 5; /* Ocupa 5 columnas */
+}
+
+.awards-card {
+    grid-column: span 12; /* Ocupa todo el ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Estilos internos de Experience */
+.job-item {
+    margin-bottom: 30px;
+    border-left: 2px solid #333;
+    padding-left: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.job-item:hover {
+    border-left: 2px solid #fff;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.job-header h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+    font-family: monospace;
+}
+
+.company {
+    font-size: 16px;
+    color: #aaa;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.details {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilos internos de Education */
+.edu-item {
+    margin-bottom: 25px;
+}
+.edu-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.edu-item p {
+    font-size: 15px;
+    color: #999;
+}
+.status {
+    font-size: 12px;
+    background: #222;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+/* Estilos internos de Awards */
+.awards-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.awards-list li {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.awards-list strong {
+    color: #fff;
+}
+
+/* =========================
+   SECCIÓN 3: SKILLS & TICKER
+   ========================= */
+.skills-section {
+    border-top: 1px solid #222;
+    padding-top: 60px;
+}
+
+.section-title-small {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Efecto Marquee (Texto infinito) */
+.skills-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 50px;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.skills-track {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* MÁS RÁPIDO */
+}
+
+.skills-track span {
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff; /* color blanco por defecto */
+    margin-right: 60px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.skills-track:hover span {
+    color: #007bff; /* color azul al hacer hover */
+    cursor: default;
+}
+
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.soft-tag {
+    background-color: #fff; /* fondo blanco */
+    color: #000; /* texto negro */
+    border: 1px solid #333; /* borde gris */
+    border-radius: 50px; /* bordes redondeados */
+    padding: 10px 24px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.soft-tag:hover {
+    background-color: #007bff; /* fondo azul al pasar hover */
+    color: #fff; /* texto blanco */
+    border-color: #007bff;
+}
+
+/* Mantener consistencia para cualquier clase filled, si la tenías */
+.soft-tag.filled {
+    background-color: #fff;
+    color: #000;
+    border-color: #333;
+}
+.soft-tag.filled:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+
+/* =========================
+   ANIMACIONES JS (CLASES BASE)
+   ========================= */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header Scroll Effect */
+header.scrolled {
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 1024px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-image-wrapper {
+        height: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .bio-text {
+        margin: 0 auto 20px auto;
+    }
+    .separator-line {
+        margin: 0 auto 30px auto;
+    }
+    
+    .experience-card, .education-card {
+        grid-column: span 12; /* En tablet, uno debajo del otro */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding-top: 100px;
+    }
+    .bio-title {
+        font-size: 42px;
+    }
+    .grid-item {
+        padding: 25px;
+    }
+    .skills-track span {
+        font-size: 32px;
+        margin-right: 30px;
+    }
+    
+  .call-to-action-quote {
+        padding-top: 0 !important;   /* elimina padding superior */
+        margin-top: -250px !important; /* sube la frase */
+        padding-bottom: 20px !important; /* opcional, ajusta el inferior */
+    }
+
+
+    
+}
+
+/* Por defecto: desktop */
+.awards-image-desktop {
+    display: block; /* Muestra la original en desktop */
+}
+.awards-image-mobile {
+    display: none; /* Oculta la versión móvil */
+}
+
+/* Solo en móvil */
+@media (max-width: 1024px) { /* o 767px si quieres solo móviles pequeños */
+    .awards-image-desktop {
+        display: none; /* Oculta la original en móvil */
+    }
+    .awards-image-mobile {
+        display: block; /* Muestra las imágenes recortadas */
+    }
+}
