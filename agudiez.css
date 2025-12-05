@@ -770,6 +770,35 @@ FRASE DE LLAMADA A LA ACCIÓN (CALL-TO-ACTION)
     line-height: 1.4; /* Mejora la legibilidad */
 }
 
+.call-to-action-quote7 {
+    /* Centra el texto en la pantalla */
+    text-align: center; 
+    
+    /* Añade espacio superior para separarlo del último carrusel */
+    padding-top: 60px; 
+    /* Añade espacio inferior */
+    padding-bottom: 80px;
+    
+    /* Configuración de Tipografía */
+    font-family: 'Inter', sans-serif; 
+    
+    /* Peso de fuente de 700px (equivale a 'bold' o 'semi-bold') */
+    font-weight: 200; 
+    
+    /* Limita el ancho del texto para que no sea una línea infinita y se vea elegante.
+       El valor de 700px que mencionaste es un buen ancho máximo. */
+    max-width: 900px;
+    
+    /* Centra el bloque de texto limitado */
+    margin: 0 auto; 
+    
+    /* Ajusta el tamaño de la fuente para que destaque */
+    font-size: 1.8rem; 
+    line-height: 1.4; /* Mejora la legibilidad */
+
+}
+
+
 
 /* Responsive para que el texto se ajuste en móvil */
 @media (max-width: 600px) {
@@ -946,88 +975,6 @@ CLASE DE ANIMACIÓN AL SCROLL (Añadida por JS)
 
 
 /*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1506,64 +1453,205 @@ RESPONSIVE DESIGN (FOOTER Y CARDS)
     }
 }
 
+/* =======================================================
+   CORRECCIÓN FINAL - SINTAXIS ARREGLADA
+   ======================================================= */
 
-/* Móvil (Max-width: 767px) */
+/* 1. MÓVIL (Todo lo específico de móvil va DENTRO de estas llaves) */
 @media (max-width: 767px) {
-    /* --------------------------------------
-       1.~¹. HERO (Reordenamiento)
-       -------------------------------------- */
+    
+    /* --- HERO --- */
     .hero-left {
-        order: 1; /* Foto y texto van PRIMERO */
-        margin-top: 80px;
+        order: 1;
+        margin-top: 80px; 
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+    .hero-left img {
+        width: 97%;
+        max-width: 650px;
+        height: auto;
+    }
+
+    .motivational-text {
+        text-align: left !important;
+        margin-left: 20px;
     }
 
     .hero-right {
-        position: static; /* Anula 'position: absolute' */
-        order: 2; /* Video va SEGUNDO, debajo del texto */
-        margin-top: 260px;
+        position: static; 
+        order: 2;
+        margin-top: 260px; 
+        width: 100%;
+        display: block;
     }
-    @media (max-width: 767px) {
+
+    /* TUS AJUSTES DE VIDEO (Respetados) */
     .hero-right video {
         display: block;
-        margin: 0 auto;        /* Asegura centrado */
-        max-width: 280px;      /* ← Hazlo más pequeño aquí */
+        margin: 0 auto;       /* Centrado */
+        max-width: 300px;     /* Tu tamaño: 300px */
         width: 100%;
-        margin-top: 210px;
-        margin-right: -60px; /* ← súbelo o bájalo según lo quieras */
-
-}
-
-@media (max-width: 767px) {
-    .motivational-text {
-        text-align: left !important;
-        margin-left: 20px; /* opcional, para que no esté pegado al borde */
+        margin-top: 230px;    /* Tu margen: 230px */
+        margin-right: -60px;  /* Tu desplazamiento: -60px */
     }
-}
-@media (max-width: 767px) {
-    .hero-left img {
-        width: 97%;   /* reduce el tamaño */
-        max-width: 650px; /* límite opcional para que no sea gigante */
-        height: auto; /* mantiene proporción */
-    }
-}
 
-    
-    /* --------------------------------------
-       2. SECCIONES (White Section más abajo)
-       -------------------------------------- */
+    /* --- SECCIÓN BLANCA --- */
     .white-section {
-        margin-top: 50px; /* Empuja la White Section más abajo */
-        padding: 40px 20px;
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 50px !important;
+        padding: 40px 20px !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+        top: 0 !important;
     }
 
-    /* --- Ajustes generales de texto/elementos --- */
-    .white-section, .white-section-two {
-        padding: 40px 20px;
+    .white-text {
+        font-size: 2rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 40px !important;
     }
-    .white-text, .white-quote {
-        font-size: 2rem;
-        margin-bottom: 30px;
+
+    /* --- CARRUSEL --- */
+    /* 1. Quitar aire de la sección general */
+    .carousel-section {
+        padding-top: 80 !important;
+        padding-bottom: 0 !important;
+        
+        /* Esto sube la sección para pegarla a la anterior */
+        margin-top: -250px !important; 
+        margin-bottom: 0 !important;
     }
+
+    /* 2. Pegar el título al carrusel */
+    .carousel-section h2 {
+        margin-bottom: 15px !important; /* Menos espacio entre título y fotos */
+        margin-top: 20px !important;
+        font-size: 1.8rem !important;
+    }
+
+    /* 3. Pegar los contenedores de los carruseles entre sí */
+    /* Si tienes dos carruseles uno debajo de otro, esto elimina el hueco */
+    .carousel-container {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* 4. Ajuste de altura para que no ocupen espacio fantasma */
+    .carousel-item {
+        margin-bottom: 0 !important;
+    }
+
+    .call-to-action-quote {
+        font-size: 1.3rem !important;
+        padding: 40px 20px !important;
+    }
+
+    /* --- FOOTER --- */
+    .main-footer {
+        padding: 60px 20px !important;
+    }
+    
+    .footer-block {
+        margin-top: 0 !important;
+    }
+
+} /* <--- AQUÍ se cierra el MÓVIL (Importante) */
+
+
+/* =======================================================
+   MENÚ HAMBURGUESA (GLOBAL)
+   ======================================================= */
+/* Esto va fuera para que funcione siempre */
+
+.menu-toggle {
+    display: none; /* Oculto en escritorio */
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 40px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.hamburger-line {
+    display: block !important; 
+    width: 100% !important;
+    height: 3px !important; 
+    margin-bottom: 6px !important;
+    background-color: #fff !important; 
+    border-radius: 2px;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+/* Visibilidad solo en pantallas pequeñas */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block !important; 
+    }
+}
+
+/* Visibilidad del menú solo en móvil/tablet */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block !important;
+    }
+    .nav {
+        display: none !important;
+    }
+}
+
+/* Animación de apertura (La X) */
+.menu-toggle.open .hamburger-line.top {
+    transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle.open .hamburger-line.middle {
+    opacity: 0;
+}
+.menu-toggle.open .hamburger-line.bottom {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* OVERLAY MENU MOVIL */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.98);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    padding: 20px 0;
+}
 
     /* Reglas de cards que están en el original de 767px (convertido a 768px/600px en tu original) */
     .service-grid {
@@ -1578,39 +1666,7 @@ RESPONSIVE DESIGN (FOOTER Y CARDS)
     .do-section {
         padding: 40px 20px 20px 20px;
         }
-     @media (max-width: 767px) {
-    .carousel-section {
-        padding-top: 20px;      /* menos espacio arriba */
-        padding-bottom: 20px;   /* menos espacio abajo */
-        margin-top: 10px;       /* espacio mínimo entre secciones */
-    }
-        
-
-    .carousel-section h2 {
-        margin-bottom: 50px;    /* más pegado al carrusel */
-    }
-
-    .carousel-container {
-        margin-bottom: -300px;    /* opcional, pega los carruseles entre sí */
-    }
-}
-
-    .carousel-section h2 {
-        font-size: 2.5rem;
-        padding: 0 20px; 
-    }
-    .carousel-item {
-        min-width: 200px;
-        height: 300px;
-    }
-    .call-to-action-quote {
-        font-size: 1.2rem;
-        padding: 40px 20px 60px 20px; 
-    }
-    .main-footer {
-        padding: 80px 20px 30px 20px;
-    }
-}
+  
 
 @media (max-width: 767px) {
     .do-section-title h1 {
@@ -1633,8 +1689,8 @@ RESPONSIVE DESIGN (FOOTER Y CARDS)
         box-sizing: border-box;
         padding-left: 20px;  
         padding-right: 20px;
-        margin-top: -360px;  
-        margin-bottom: 0px;
+        margin-top: -390px;  
+        margin-bottom: 270px;
         padding-top: 0px;    
         padding-bottom: 0px; 
 
@@ -1643,17 +1699,26 @@ RESPONSIVE DESIGN (FOOTER Y CARDS)
     }
 }
 
-    .white-text-container-two {
-        width: 100%;
-        padding-left: 20px;   /* un poquito de aire dentro */
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
+   /* Código original del contenedor */
+.white-text-container-two {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* --- AÑADE ESTO PARA CAMBIAR EL TAMAÑO DEL TEXTO --- */
+.white-text-container-two .white-quote, 
+.white-text-container-two h2, 
+.white-text-container-two p {
+    font-size: 1.9rem !important; /* <--- Juega con este número (ej: 1rem, 18px, 20px) */
+    line-height: 1.4 !important;   /* Esto ajusta el espacio entre líneas */
+}
 
     .white-section-two, .white-section-two * {
         max-width: none !important; /* elimina límites de contenedores padres */
     }
-}
+
 
 
 
@@ -2228,7 +2293,7 @@ RESPONSIVE DESIGN (FOOTER Y CARDS)
 @media (max-width: 767px) {
     /* Reduce espacio después del portfolio */
     .projects-grid {
-        margin-bottom: -250px; /* antes estaba más grande */
+        margin-bottom: -50px; /* antes estaba más grande */
     }
     
     .call-to-action-quote {
@@ -2707,10 +2772,12 @@ header.scrolled {
         margin-right: 30px;
     }
     
-  .call-to-action-quote {
+  .call-to-action-quote7 {
         padding-top: 0 !important;   /* elimina padding superior */
-        margin-top: -250px !important; /* sube la frase */
+        margin-top: -20px !important; /* sube la frase */
         padding-bottom: 20px !important; /* opcional, ajusta el inferior */
+        font-size: 1.3rem;
+        padding: 40px 20px 60px 20px; /* Reduce padding y añade margen lateral en móvil */
     }
 
 
@@ -2732,5 +2799,83 @@ header.scrolled {
     }
     .awards-image-mobile {
         display: block; /* Muestra las imágenes recortadas */
+    }
+}
+
+
+
+/* =======================================================
+   RESTAURACIÓN DEL ESCRITORIO ORIGINAL
+   (El @media min-width significa: "Aplicar solo si es PC o Tablet")
+   ======================================================= */
+
+@media (min-width: 768px) {
+
+    /* 1. SERVICE CARDS: Vuelven a ser 3 columnas y altas */
+    .service-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important; /* 3 columnas */
+        gap: 40px !important;
+        margin-top: 80px !important;
+    }
+
+    .service-card-flip {
+        height: 575px !important; /* Altura original gigante */
+        perspective: 1200px !important;
+    }
+
+    /* 2. WHITE SECTION 2: Vuelve a estar desplazada y ancha */
+    .white-section-two {
+        width: 150% !important;           /* Ancho 150% original */
+        height: 180vh !important;
+        top: -350px !important;           /* Subida original */
+        transform: translateX(-400px) !important; /* Desplazamiento izquierda original */
+        padding: 10px 100px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important;
+        
+        /* Reseteamos cosas del móvil */
+        position: relative !important;
+        left: 0 !important;
+        margin: 0 !important;
+    }
+
+    .white-text-container-two {
+        max-width: 1200px !important;
+        padding: 0 20px 0 70px !important; 
+        padding-top: 110px !important;
+        width: 100% !important;
+    }
+
+    /* 3. TEXTOS: Vuelven a ser gigantes (72px) */
+    .white-quote {
+        font-size: 72px !important; 
+        line-height: 1.3 !important;
+    }
+    
+    .white-text-container-two h2, 
+    .white-text-container-two p {
+        font-size: inherit !important; /* Heredan el tamaño grande */
+    }
+}
+
+
+/* =======================================================
+   AUMENTAR LETRA SOLO EN ESCRITORIO (Desktop)
+   Este código solo funciona en pantallas grandes (PC/Tablet)
+   ======================================================= */
+
+@media (min-width: 768px) {
+    
+    /* Afecta a todos los textos dentro de ese contenedor */
+    .white-text-container-two .white-quote,
+    .white-text-container-two h2,
+    .white-text-container-two p {
+        /* Cambia 80px por el tamaño que quieras */
+        font-size: 80px !important; 
+        
+        /* Ajusta el interlineado para que no se monten las líneas */
+        line-height: 1.1 !important; 
     }
 }
